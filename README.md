@@ -51,7 +51,7 @@ Available parser values in this version:
 
 If a new site has different HTML, add a parser function in `scraper/update_menus.py` and register it in `parsers` map.
 
-## Cron Job (Hetzner)
+## Cron Job
 
 Run every 30 minutes in business hours:
 
@@ -65,27 +65,6 @@ Optional safety refresh at 17:10:
 10 17 * * 1-5 cd /var/www/obidek && /bin/bash scripts/update_menus.sh >> /var/log/obidek-update.log 2>&1
 ```
 
-## One-Command Deploy From Mac
-
-Use the helper script to sync project files and run remote refresh:
-
-```bash
-./scripts/deploy.sh
-```
-
-This deploy script:
-
-- rsyncs local project to the server (`letaky:/var/www/obidek`)
-- creates remote venv if needed
-- installs requirements (unless skipped)
-- refreshes `data/current_menu.json`
-
-Useful options:
-
-```bash
-./scripts/deploy.sh --skip-install
-./scripts/deploy.sh --host letaky --remote-dir /var/www/obidek
-```
 
 ## Nginx Example
 
