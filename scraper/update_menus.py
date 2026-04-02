@@ -77,6 +77,65 @@ def split_price(line: str) -> dict[str, Any]:
     return {"title": normalize_space(m.group(1)), "price": normalized_price}
 
 
+def normalize_price_value(raw_price: str | None) -> str | None:
+    if not raw_price:
+        return None
+    digits_match = re.search(r"(\d{2,3})", raw_price)
+    if not digits_match:
+        return None
+    amount = int(digits_match.group(1))
+    if not (0 < amount < 1000):
+        return None
+    return f"{amount} Kč"
+
+
+def parse_zlatyklas_items(lines: list[str]) -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
+
+    for raw_line in lines:
+        line = normalize_space(raw_line)
+        if not line:
+            continue
+
+        norm = normalize_day(line)
+
+        # Ignore placeholder row labels from the source CMS.
+        if norm == "polozka":
+            continue
+
+        # Pattern: "Polozka 189 Kč" -> attach price to previous item when possible.
+        placeholder_price = re.match(r"^polozka\s+(\d{2,3})\s*(?:kc|kč|,-)?$", norm, flags=re.IGNORECASE)
+        if placeholder_price:
+            price_value = normalize_price_value(placeholder_price.group(1))
+            if items and not items[-1].get("price") and price_value:
+                items[-1]["price"] = price_value
+            continue
+
+        # Pattern: "49 Kč" as a standalone line.
+        price_only = re.match(r"^(\d{2,3})\s*(?:Kc|Kč|,-)\s*$", line, flags=re.IGNORECASE)
+        if price_only:
+            price_value = normalize_price_value(price_only.group(1))
+            if items and not items[-1].get("price") and price_value:
+                items[-1]["price"] = price_value
+            continue
+
+        # Pattern: "189 Kč Název jídla"
+        leading = re.match(r"^(\d{2,3})\s*(?:Kc|Kč|,-)?\s+(.+)$", line, flags=re.IGNORECASE)
+        if leading:
+            price_value = normalize_price_value(leading.group(1))
+            title = normalize_space(leading.group(2))
+            if title:
+                items.append({"title": title, "price": price_value})
+            continue
+
+        # Pattern: "Název jídla 189 Kč"
+        trailing = split_price(line)
+        if trailing.get("title"):
+            items.append(trailing)
+
+    return items
+
+
 def day_aliases_for_date(target: datetime) -> list[str]:
     return DAY_NAMES[target.weekday()]
 
@@ -236,7 +295,8 @@ def parse_zlatyklas(html: str, target: datetime) -> ParseResult:
             break
 
     chosen_lines = today_lines if today_lines else lines
-    return ParseResult(items=[split_price(line) for line in chosen_lines], raw_lines=chosen_lines, notes=[])
+    parsed_items = parse_zlatyklas_items(chosen_lines)
+    return ParseResult(items=parsed_items, raw_lines=chosen_lines, notes=[])
 
 
 def read_previous_output(path: Path) -> dict[str, Any]:

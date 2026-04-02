@@ -4,4 +4,18 @@ __pycache__/
 *.pyo
 *.pyd
 .DS_Store
+scripts/deploy.sh
 deploy.sh
+
+# Local environment and machine-specific files
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs
+*.log
+
+# Editor folders
+.vscode/
+.idea/

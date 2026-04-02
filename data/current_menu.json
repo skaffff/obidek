@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-04-01T23:33:56.177582+02:00",
+  "generated_at": "2026-04-02T12:47:21.732442+02:00",
   "timezone": "Europe/Prague",
-  "day": "Wednesday",
+  "day": "Thursday",
   "restaurants": [
     {
       "id": "smichovska-formanka",
       "name": "Smichovska Formanka",
       "url": "http://smichovskaformanka.cz/denni-menu/",
-      "fetched_at": "2026-04-01T23:33:56.177582+02:00",
-      "menu_date": "2026-04-01",
+      "fetched_at": "2026-04-02T12:47:21.732442+02:00",
+      "menu_date": "2026-04-02",
       "status": "ok",
       "items": [
         {
-          "title": "Polévka: bílá zelná s uzeninou",
+          "title": "Polévka: gulášová",
           "price": "45 Kč"
         },
         {
-          "title": "Hovězí po Znojemsku, houskové knedlíky/ rýže",
-          "price": "185 Kč"
-        },
-        {
-          "title": "Švédské masové kuličky, smet. om. s brusinkami, br. kaše",
+          "title": "Kuřecí nudličky na smetaně, pórku a slanině, jasmínová rýže",
           "price": "179 Kč"
         },
         {
-          "title": "Špagety alla Puttanesca s rukolou",
-          "price": "179 Kč"
-        },
-        {
-          "title": "Kuřecí prso zapeč. se sýrem a šunkou, hranolky",
+          "title": "Kuřecí prsíčko supreme, vařené brambory, žemlová nádivka",
           "price": "189 Kč"
         },
         {
-          "title": "Grilovaná vepř. panenka s žampionovou om. americké br.",
+          "title": "Svíčková na smetaně, houskové knedlíky, brusink. terč",
           "price": "189 Kč"
+        },
+        {
+          "title": "Grilovaná vepř. panenka, karamelizovaná cibulka, polenta",
+          "price": "189 Kč"
+        },
+        {
+          "title": "Hovězí burger se slaninou, hořčičná majonéza, hranolky",
+          "price": "195 Kč"
         }
       ],
       "notes": []
@@ -42,29 +42,37 @@
       "id": "tradice-andel",
       "name": "Tradice Andel",
       "url": "https://www.tradiceandel.cz/cz/denni-nabidka/",
-      "fetched_at": "2026-04-01T23:33:56.177582+02:00",
-      "menu_date": "2026-04-01",
+      "fetched_at": "2026-04-02T12:47:21.732442+02:00",
+      "menu_date": "2026-04-02",
       "status": "ok",
       "items": [
         {
-          "title": "POLÉVKA : Čočková polévka s uzeným masem",
+          "title": "POLÉVKA : Žampionový krém",
           "price": "45 Kč"
         },
         {
-          "title": "Kuře na paprice, čerstvé rigatoni",
-          "price": "179 Kč"
-        },
-        {
-          "title": "Holandský řízek, bramborová kaše, okurkový salát",
+          "title": "Burrito s hovězím a vepřovým masem, salátek, dip",
           "price": "185 Kč"
         },
         {
-          "title": "Grilovaný vepřový steak, pečený brambor, švestková omáčka, míchaný salát",
+          "title": "Řízečky z vepřové panenky, bramborová kaše, kyselá okurka",
+          "price": "195 Kč"
+        },
+        {
+          "title": "Vepřový maďarský guláš, špekový a houskový knedlík, smažená cibulka",
+          "price": "179 Kč"
+        },
+        {
+          "title": "Grilované kuřecí prso zapečené mozzarellou, americké brambory, rajčatová omáčka",
           "price": "189 Kč"
         },
         {
-          "title": "Míchaný salát, balkánský sýr, olivy",
-          "price": "189 Kč"
+          "title": "Čerstvé špagety aglio e olio, kuřecí maso, parmazán",
+          "price": "185 Kč"
+        },
+        {
+          "title": "Míchaný zeleninový salát, kozí sýr, naše máslová brioška",
+          "price": "179 Kč"
         }
       ],
       "notes": []
@@ -73,13 +81,44 @@
       "id": "zlaty-klas",
       "name": "Zlaty Klas",
       "url": "http://zlatyklas.cz/",
-      "fetched_at": "2026-04-01T23:33:56.177582+02:00",
-      "menu_date": "2026-04-01",
-      "status": "empty",
-      "items": [],
-      "notes": [
-        "Menu likely unpublished or already removed on source site"
-      ]
+      "fetched_at": "2026-04-02T12:47:21.732442+02:00",
+      "menu_date": "2026-04-02",
+      "status": "ok",
+      "items": [
+        {
+          "title": "POLÉVKA - HOVĚZÍ BUJÓN s vaječným žloutkem, petrželkou a pečivem/1,3,6,7/",
+          "price": "49 Kč"
+        },
+        {
+          "title": "VEPŘOVÝ \" MAĎARSKÝ \" PAPRIKÁŠ, těstovinová kolínka ( na přání houskový knedlík) /1,3,6,7/",
+          "price": "169 Kč"
+        },
+        {
+          "title": "KRŮTÍ GURMÁNSKÁ PÁNEV se smetanou, fazolkami a americkým bramborem /1,7/",
+          "price": "175 Kč"
+        },
+        {
+          "title": "MEXICKÁ TORTILLA \" BURITOS \" s hovězím masem, rýží, fazolemi, čedarem, ledovým salátem, tomaty, česnekovým DIPEM a lupínky NACHOS /1,3,7/",
+          "price": "189 Kč"
+        },
+        {
+          "title": "PEČENÉ NADÍVANÉ KUŘE ( čtvrtka ) s \" velikonoční \" nádivkou, máslovým bramborem a okurkovým salátkem /1,3,7/",
+          "price": "179 Kč"
+        },
+        {
+          "title": "VEPŘOVÁ PANENKA na grilu s \" ARMAŇAK \" cibulkami, julienne hranolkami a tatarskou omáčkou/1,3,6,10/",
+          "price": "189 Kč"
+        },
+        {
+          "title": "MENU - POLÉVKA a VEPŘOVÝ \"MAĎARSKÝ PAPRIKÁŠ\", těstovinová kolínka ( houskový knedlík) /1,3,6,7/",
+          "price": "199 Kč"
+        },
+        {
+          "title": "Po dobu obědů - LIMONÁDA - RŮŽOVÝ GREP 0,3l",
+          "price": "39 Kč"
+        }
+      ],
+      "notes": []
     }
   ]
 }
