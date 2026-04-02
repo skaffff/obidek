@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOITRON OBĚD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="board">
+      <header class="board-header">
+        <h1>JDEŠ NA OBĚD?</h1>
+        <div id="meta" class="meta"></div>
+      </header>
+      <div id="menu-day" class="menu-day"></div>
+      <section id="restaurants" class="grid"></section>
+    </main>
+    <template id="card-template">
+      <article class="card">
+        <div class="card-head">
+          <h2 class="name"></h2>
+          <span class="status"></span>
+        </div>
+        <ol class="menu-list"></ol>
+        <a class="source" target="_blank" rel="noreferrer">zdroj</a>
+      </article>
+    </template>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

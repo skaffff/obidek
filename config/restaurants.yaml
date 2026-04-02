@@ -1,0 +1,21 @@
+timezone: Europe/Prague
+stale_policy:
+  keep_last_successful: true
+  hold_after_hour: 15
+  max_age_hours: 36
+
+restaurants:
+  - id: smichovska-formanka
+    name: Smichovska Formanka
+    parser: formanka
+    url: http://smichovskaformanka.cz/denni-menu/
+
+  - id: tradice-andel
+    name: Tradice Andel
+    parser: tradice
+    url: https://www.tradiceandel.cz/cz/denni-nabidka/
+
+  - id: zlaty-klas
+    name: Zlaty Klas
+    parser: zlatyklas
+    url: http://zlatyklas.cz/

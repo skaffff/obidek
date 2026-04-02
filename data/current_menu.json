@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-04-01T23:33:56.177582+02:00",
+  "timezone": "Europe/Prague",
+  "day": "Wednesday",
+  "restaurants": [
+    {
+      "id": "smichovska-formanka",
+      "name": "Smichovska Formanka",
+      "url": "http://smichovskaformanka.cz/denni-menu/",
+      "fetched_at": "2026-04-01T23:33:56.177582+02:00",
+      "menu_date": "2026-04-01",
+      "status": "ok",
+      "items": [
+        {
+          "title": "Polévka: bílá zelná s uzeninou",
+          "price": "45 Kč"
+        },
+        {
+          "title": "Hovězí po Znojemsku, houskové knedlíky/ rýže",
+          "price": "185 Kč"
+        },
+        {
+          "title": "Švédské masové kuličky, smet. om. s brusinkami, br. kaše",
+          "price": "179 Kč"
+        },
+        {
+          "title": "Špagety alla Puttanesca s rukolou",
+          "price": "179 Kč"
+        },
+        {
+          "title": "Kuřecí prso zapeč. se sýrem a šunkou, hranolky",
+          "price": "189 Kč"
+        },
+        {
+          "title": "Grilovaná vepř. panenka s žampionovou om. americké br.",
+          "price": "189 Kč"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "tradice-andel",
+      "name": "Tradice Andel",
+      "url": "https://www.tradiceandel.cz/cz/denni-nabidka/",
+      "fetched_at": "2026-04-01T23:33:56.177582+02:00",
+      "menu_date": "2026-04-01",
+      "status": "ok",
+      "items": [
+        {
+          "title": "POLÉVKA : Čočková polévka s uzeným masem",
+          "price": "45 Kč"
+        },
+        {
+          "title": "Kuře na paprice, čerstvé rigatoni",
+          "price": "179 Kč"
+        },
+        {
+          "title": "Holandský řízek, bramborová kaše, okurkový salát",
+          "price": "185 Kč"
+        },
+        {
+          "title": "Grilovaný vepřový steak, pečený brambor, švestková omáčka, míchaný salát",
+          "price": "189 Kč"
+        },
+        {
+          "title": "Míchaný salát, balkánský sýr, olivy",
+          "price": "189 Kč"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "zlaty-klas",
+      "name": "Zlaty Klas",
+      "url": "http://zlatyklas.cz/",
+      "fetched_at": "2026-04-01T23:33:56.177582+02:00",
+      "menu_date": "2026-04-01",
+      "status": "empty",
+      "items": [],
+      "notes": [
+        "Menu likely unpublished or already removed on source site"
+      ]
+    }
+  ]
+}
